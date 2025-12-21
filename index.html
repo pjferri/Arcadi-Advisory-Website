@@ -713,6 +713,47 @@
         font-size: 1.1rem;
       }
     }
+
+    /* Scroll to Top Button - Mobile Only */
+    .scroll-to-top {
+      display: none;
+      position: fixed;
+      bottom: 2rem;
+      right: 1.5rem;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: rgba(74, 158, 255, 0.15);
+      border: 1px solid rgba(74, 158, 255, 0.4);
+      color: var(--silver-light);
+      font-size: 1.4rem;
+      cursor: pointer;
+      z-index: 999;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease, visibility 0.3s ease, background 0.3s ease, transform 0.3s ease;
+      align-items: center;
+      justify-content: center;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .scroll-to-top:hover {
+      background: rgba(74, 158, 255, 0.25);
+      border-color: rgba(74, 158, 255, 0.6);
+      transform: translateY(-2px);
+    }
+
+    .scroll-to-top.visible {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    @media (max-width: 768px) {
+      .scroll-to-top {
+        display: flex;
+      }
+    }
   </style>
 </head>
 <body>
@@ -727,6 +768,9 @@
   <div class="bubble" style="width: 75px; height: 75px; left: 60%; background: radial-gradient(circle at 30% 30%, rgba(192, 192, 192, 0.16), rgba(192, 192, 192, 0.02)); animation-duration: 16s; animation-delay: 6s; animation-name: floatDiagonal;"></div>
   <div class="bubble" style="width: 85px; height: 85px; left: 80%; background: radial-gradient(circle at 30% 30%, rgba(74, 158, 255, 0.28), rgba(74, 158, 255, 0.05)); animation-duration: 23s; animation-delay: 8s;"></div>
   <div class="bubble" style="width: 65px; height: 65px; left: 35%; background: radial-gradient(circle at 30% 30%, rgba(192, 192, 192, 0.14), rgba(192, 192, 192, 0.02)); animation-duration: 20s; animation-delay: 9s;"></div> -->
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-to-top" aria-label="Scroll to top">↑</button>
 
   <!-- Navigation -->
   <nav>
@@ -925,6 +969,21 @@
         hamburger.classList.remove('active');
         navLinks.classList.remove('active');
       });
+    });
+
+    // Scroll to Top Button
+    const scrollToTopBtn = document.querySelector('.scroll-to-top');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 400) {
+        scrollToTopBtn.classList.add('visible');
+      } else {
+        scrollToTopBtn.classList.remove('visible');
+      }
+    });
+
+    scrollToTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     });
   </script>
 </body>
