@@ -333,6 +333,26 @@
       transform: translateY(-2px);
     }
 
+    /* Hero Background Image - Anchored to center like other hero content */
+    .hero-image {
+      width: 1000px;
+      opacity: 0.075;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-900px, -50%);
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    @media (max-width: 768px) {
+      .hero-image {
+        width: 400px;
+        transform: translate(-50%, -50%); /* centered */
+        opacity: 0.04;
+      }
+    }
+
     /* Section Styling */
     section {
       padding: 6rem 2rem;
@@ -742,7 +762,7 @@
       <div class="feature-pill">Digital Transformation</div>
     </div>
     <!-- <img src = "herobackground.png" class ="hero-image" alt="Arcadi Advisory Logo" style="width: 1000px; opacity: 0.075; position: absolute; bottom: 150px; left: 610px; z-index: 0;"> -->
-    <img src = "herobackground.png" class ="hero-image" alt="Arcadi Advisory Logo" style="width: 1000px; opacity: 0.075; position: absolute; bottom: 150px; right: 610px; z-index: 0; transform: scaleX(1); pointer-events: none;">
+    <img src="herobackground.png" class="hero-image" alt="Arcadi Advisory Logo">
     <!-- <img src = "herobackground.png" class ="hero-image" alt="Arcadi Advisory Logo" style="width: 1000px; opacity: 0.075; position: absolute; bottom: 150px; right: 100px; z-index: 0; transform: scaleX(1);"> -->
   </section>
 
