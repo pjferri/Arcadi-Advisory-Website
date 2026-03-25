@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Arcadi Advisory</title>
-  <meta name="description" content="Expert consulting in AI strategy, IT security, and digital transformation. Navigate complexity with confidence.">
+  <meta name="description" content="Arcadi Advisory helps technology companies navigate regulated markets — federal, healthcare, financial services. We've been the buyer. We know what works.">
   
   <!-- Favicon -->
   <link rel="icon" type="image/png" sizes="64x64" href="favicon.png">
@@ -464,7 +464,7 @@
     /* Services Section */
     .services-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-template-columns: repeat(2, 1fr);
       gap: 2.5rem;
       margin-top: 3rem;
     }
@@ -626,6 +626,24 @@
       box-shadow: 0 4px 16px rgba(74, 158, 255, 0.3);
     }
 
+    .pdf-download {
+      margin-top: 1.2rem;
+      font-size: 0.9rem;
+      color: var(--silver-dim);
+    }
+
+    .pdf-download a {
+      color: var(--silver-dim);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(192, 192, 192, 0.25);
+      transition: color 0.3s ease, border-color 0.3s ease;
+    }
+
+    .pdf-download a:hover {
+      color: var(--silver-light);
+      border-bottom-color: rgba(192, 192, 192, 0.5);
+    }
+
     /* Footer */
     footer {
       border-top: 1px solid rgba(192, 192, 192, 0.1);
@@ -695,6 +713,7 @@
 
       .services-grid {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
       }
 
       .media-item {
@@ -802,9 +821,9 @@
     <h1>ARCADI ADVISORY</h1>
     <p class="tagline">Charting the course through technological complexity</p>
     <div class="hero-features">
-      <div class="feature-pill">AI Strategy</div>
-      <div class="feature-pill">IT Security</div>
-      <div class="feature-pill">Digital Transformation</div>
+      <div class="feature-pill">Regulated Market Advisory</div>
+      <div class="feature-pill">Mission-Technology Fit</div>
+      <div class="feature-pill">Procurement Strategy</div>
     </div>
     <!-- <img src = "herobackground.png" class ="hero-image" alt="Arcadi Advisory Logo" style="width: 1000px; opacity: 0.075; position: absolute; bottom: 150px; left: 610px; z-index: 0;"> -->
     <img src="herobackground.png" class="hero-image" alt="Arcadi Advisory Logo">
@@ -815,36 +834,40 @@
   <section id="about">
     <div class="section-header">
       <h2 class="section-title">About</h2>
-      <p class="section-subtitle">Leadership forged in the crucible of government technology</p>
+      <p class="section-subtitle">We've been the buyer. We know what works.</p>
     </div>
     <div class="about-content">
       <div class="about-text">
         <h3>Tony Arcadi</h3>
         <p>
-          With decades of experience leading technology initiatives at the highest levels of government, 
-          Tony Arcadi brings unparalleled expertise in navigating complex IT challenges. As a former CIO, 
-          he transformed critical systems and established new paradigms for security and innovation.
+          Technology companies hire Arcadi Advisory because our team spent decades inside the federal
+          government — including at the CIO and Chief Procurement Officer level of Cabinet-level
+          departments — making technology actually work at scale.
         </p>
         <div class="about-highlight">
           <p>
-            Arcadi Advisory provides strategic guidance to organizations confronting the dual challenges 
-            of AI integration and cybersecurity in an increasingly complex threat landscape.
+            We know what large, regulated organizations need, how they buy, what breaks in production,
+            and how to talk about technology in the language decision-makers understand. The lessons we
+            learned in government apply wherever the stakes are high: federal and state agencies,
+            financial services, healthcare, energy, and critical infrastructure. If your product solves
+            a real problem but you're struggling to get traction in these markets, that's exactly what
+            we help with.
           </p>
         </div>
         <p>
-          From modernizing legacy infrastructure to implementing cutting-edge AI solutions, Tony 
-          combines technical depth with strategic vision to help organizations build resilient, 
-          future-ready systems.
+          Backed by a network of former CIOs, Chief Procurement Officers, budget leaders, and
+          cybersecurity executives across government and regulated industry, we help you navigate
+          from product to adoption.
         </p>
       </div>
       <div>
         <ul class="expertise-list">
-          <li>Enterprise IT Transformation</li>
-          <li>Artificial Intelligence Strategy</li>
-          <li>Cybersecurity & Risk Management</li>
-          <li>Legacy System Modernization</li>
-          <li>Cloud Architecture & Migration</li>
-          <li>Digital Innovation Leadership</li>
+          <li>Federal Market Entry Strategy</li>
+          <li>Mission-Technology Fit Assessment</li>
+          <li>Stakeholder Translation & Messaging</li>
+          <li>Budget & Procurement Navigation</li>
+          <li>Federal & AI Readiness Review</li>
+          <li>Agency Relationship Strategy</li>
         </ul>
       </div>
     </div>
@@ -854,31 +877,46 @@
   <section id="services">
     <div class="section-header">
       <h2 class="section-title">Services</h2>
-      <p class="section-subtitle">Comprehensive consulting for the modern enterprise</p>
+      <p class="section-subtitle">Charting a course for technology companies in regulated markets</p>
     </div>
     <div class="services-grid">
       <div class="service-card">
-        <h3>AI Strategy & Implementation</h3>
+        <h3>Mission-Technology Fit</h3>
         <p>
-          Navigate the AI landscape with confidence. From identifying use cases to full-scale 
-          implementation, develop AI strategies that deliver measurable value while managing risk 
-          and ensuring responsible deployment.
+          Not every product belongs in every market — and not every opportunity is worth pursuing.
+          We help you get your bearings before you commit: does your technology solve a real
+          operational problem inside federal agencies, hospital networks, or financial institutions?
+          We map your capabilities to funded priorities (not wish lists) and give you an honest
+          go/no-go before you invest a year and a million dollars chasing the wrong opportunity.
         </p>
       </div>
       <div class="service-card">
-        <h3>IT Security & Resilience</h3>
+        <h3>Stakeholder Translation</h3>
         <p>
-          Build robust security architectures that protect your organization against evolving threats. 
-          Comprehensive assessments, risk management frameworks, and strategic planning for secure, 
-          resilient operations.
+          Most deals in regulated markets die because technologists can't speak mission and
+          decision-makers can't evaluate technology. We've sat in both chairs. We translate your
+          capabilities into the operational language that moves decisions forward — whether you're
+          in a government conference room or a hospital boardroom — and prepare your team to speak
+          credibly with CIOs, CFOs, and mission executives.
         </p>
       </div>
       <div class="service-card">
-        <h3>Digital Transformation</h3>
+        <h3>Compliance & AI Readiness</h3>
         <p>
-          Transform legacy systems into modern, agile infrastructure. Strategic roadmaps for cloud 
-          migration, system modernization, and organizational change that balance innovation with 
-          operational continuity.
+          You've built a great product. Can it survive a regulated IT environment? We evaluate your
+          technology against the reality of enterprise infrastructure in government, healthcare, and
+          financial services — security, compliance, AI governance, operational resilience, FedRAMP,
+          FISMA, HIPAA, SOX, Zero Trust. Not what the brochure says. What it actually takes.
+        </p>
+      </div>
+      <div class="service-card">
+        <h3>Budget & Procurement Reality</h3>
+        <p>
+          In government, understanding the budget cycle is the difference between a deal that closes
+          and one that dies in "next fiscal year" limbo. In healthcare and financial services, it's
+          navigating procurement committees and compliance gates. We navigate what's funded and when,
+          match your product to the right vehicles, and help it find safe harbor inside organizations
+          that buy slowly and carefully — because we've been on the other side of that table.
         </p>
       </div>
     </div>
@@ -934,24 +972,27 @@
   <section id="contact">
     <div class="section-header">
       <h2 class="section-title">Get In Touch</h2>
-      <p class="section-subtitle">Ready to navigate your next challenge?</p>
+      <p class="section-subtitle">Ready to find your heading?</p>
     </div>
     <div class="contact-content">
       <p>
-        Whether you're exploring AI opportunities, strengthening your security posture, or 
-        planning a major transformation initiative, let's discuss how Arcadi Advisory can help 
-        chart your course to success.
+        Whether you're entering the federal market, selling into healthcare or financial services,
+        or trying to understand why your product isn't gaining traction in regulated environments —
+        we've been on the other side of that table. Let's chart a course that actually works.
       </p>
       <div class="contact-cta">
-        <h3>Let's Start a Conversation</h3>
-        <a href="mailto:info@arcadi.com" class="email-link">info@arcadi.com</a>
+        <h3>Let's Talk</h3>
+        <a href="mailto:tony@arcadi.net" class="email-link">tony@arcadi.net</a>
+        <p class="pdf-download">
+          <a href="capabilities-statement.pdf" target="_blank" rel="noopener">Download our capabilities overview (PDF)</a>
+        </p>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Arcadi Advisory LLC. All rights reserved.</p>
+    <p>&copy; 2026 Arcadi Advisory LLC. All rights reserved.</p>
   </footer>
 
   <!-- JavaScript for Hamburger Menu -->
